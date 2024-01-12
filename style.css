@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(206, 206, 206);
+}
+main {
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+}
+main::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  transform: skewY(10deg);
+  background: linear-gradient(90deg, #c22020, #1162c0);
+  box-shadow: 0 0 10px black;
+}
+section {
+  height: 65vh;
+  margin: 7.5%;
+  padding: 28px;
+  display: flex;
+  background-color: #1162c0;
+  color: #fff;
+  box-shadow: 0 0 10px #000;
+  background-image: linear-gradient(90deg, #970990e7, #f17929);
+}
+section > div:nth-child(1) {
+    width: 40%;
+  }
+h1 {
+  font-size: 32px;
+}
+p {
+  text-align: justify;
+  font-size: 18px;
+}
+img {
+  height: 50%;
+  width: 44%;
+}
+.shoe {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  margin-left: 50px;
+}
+.shoe:hover {
+  top: 10px;
+  height: 100%;
+  width: 66%;
+}
